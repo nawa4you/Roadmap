@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title text-font="cursive"> hehe </title>
+</head>
+<body>
+<div class="container">
+    <button id="submit-btn">
+        <span class="text"> Click!</span>
+        <span class="icon">✓</span>
+    </button>
+</div>
+</body>
+
+<style>
+
+    .container { 
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        font-size: 40px;
+        height: 100px;
+        width: 250px;
+        border: 2px solid rgb(32, 18, 18);
+        background-color: white;
+        cursor: pointer;
+        transition: border-color 800ms,
+            background-color 800ms, width 800ms,
+            border-radius 800ms;
+    }
+
+    button:hover {
+        background-color: #ddd;
+        border-color: transparent;
+    }
+
+    button.active .text {
+        visibility: hidden;
+    }
+
+    button.active {
+        border-radius: 50%;
+        width: 100px;
+        border-color: #50c878;
+        background-color: #50c878;
+    }
+
+    button.active .icon {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+    .text, .icon {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .icon {
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 800ms;
+        color: white;
+
+    }
+</style>
+
+<script>
+    const submitBtn = document.querySelector(
+        "#submit-btn"
+
+    ) 
+
+    submitBtn.addEventListener('click', () => {
+        submitBtn.classList.add('active')
+    })
+</script>

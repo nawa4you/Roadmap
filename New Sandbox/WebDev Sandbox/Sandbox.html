@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> YYYY Login </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: orangered;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+    
+    .container {
+      background-color: orangered;
+      border-radius: 5px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    h2 {
+        background-image: linear-gradient(to right, #ff0000, #0000ff);
+      text-align: center;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    
+    
+    
+input[type="submit"] {
+      background-image: linear-gradient(grey, orangered);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: rgb(96, 69, 160);
+    }
+    .text {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      text-orientation: upright;
+    }
+    
+    
+    .border-top {
+      position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right, yellow, orange);
+        animation: animate-border-top 2s linear infinite;
+    }
+    @keyframes animate-border-top {
+        0% {
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+    }
+    .border-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to right, yellow, orange);
+        animation: animate-border-right 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate-border-right {
+        0% {
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+    .border-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left, yellow, orange);
+        animation: animate-border-bottom 2s linear infinite;
+    }
+    @keyframes animate-border-bottom {
+        0% {
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+      }
+      
+      .border-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top, yellow, orange);
+        animation: animate-border-left 2s linear infinite;
+        animation-delay: 1s;
+      }
+    @keyframes animate-border-left {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+    
+    .container {
+      position: absolute;
+      overflow: hidden;
+      border-radius: 5px;
+      background-image: linear-gradient(to right, #ff0000, #0000ff);
+      }
+    
+
+  </style>
+</head>
+<body>
+  
+</div>
+  <div class="container">
+    <h2> Login </h2>
+    <form>
+      <span class="border-top"></span>
+      <span class="border-right"></span>
+      <span class="border-bottom"></span>
+      <span class="border-left"></span>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+      <input type="submit" value="Login">
+      <div>
+      <input type="submit" value="Sign In"></form>
+
+      <div>
+        <a href="New">forgotten Password?</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
